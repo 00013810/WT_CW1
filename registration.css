@@ -1,0 +1,137 @@
+/*style of all page*/
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Times New Roman';
+}
+
+/*style for body*/
+body
+{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content:center; 
+	background-color: #4070f4;
+	color: black;
+}
+
+/*style for container*/
+.container
+{
+	position: relative;
+	max-width: 900px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 30px;
+	margin: 0 15px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+}
+/*style for header in container*/
+.container header
+{
+	position: relative;
+	font-size: 20px;
+	font-weight: 600;
+	color: #333;
+}
+
+/*style for header in container before*/
+.container header::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	height: 3px;
+	width: 27px;
+	border-radius: 8px;
+	background-color: #4070f4;
+}
+
+
+
+/*style for form as position, size and color*/
+.container form
+{
+	position: relative;
+	min-height: 490px;
+	background-color: #fff;
+	margin-top: 16px; 
+}
+
+/*position for user-details class*/
+.container form .user_details
+{
+	margin-top: 30px;	
+}
+
+/*position for user-details Id*/
+.container form .details.Id
+{
+	margin-top: 30px;	
+}
+
+/*style for title in form*/
+.container form .title
+{
+	display: block;
+	margin-bottom: 8px;
+	font-size: 16px;
+	font-weight: 500;
+	margin: 6px 0;
+	color: black;
+}
+
+/*position fields in form*/
+.container form .fields
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/*position input user in class fields */
+form .fields .input-user
+{
+	display: flex;
+	width: calc(100% / 3 - 15px);
+	flex-direction: column;
+	margin: 4px 0;
+}
+
+/*style for label*/
+.input-user label
+{
+	font-size: 12px;
+	font-weight: 500;
+	color: #2e2e2e;
+}
+
+/*style for user input*/
+.input-user input
+{
+	outline: none;
+	font-size: 14px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	font-variant: 12px;
+	font-weight: 400px;
+	color: #333;
+	height: 42px;
+	margin: 8px 0;
+	padding: 0 15px;
+}
+
+/*color for user input ytpe date*/
+.input-user input[type="date"]{
+	color: #707070;
+}
+
+/*color for input type date*/
+.input-user input[type="date"]:valid{
+	color: #333;
+}

@@ -1,0 +1,449 @@
+/*------All page style------*/
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif; 
+}
+
+/*------Size of body in width------*/
+
+body
+{
+	width: 100%;
+}
+/*-------Navbar style------*/
+
+/*style of background for navigation panel*/
+#header
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background: #E3E6F3;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+	z-index: 999;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+/*positon for elements inside of navigation panel*/
+#navbar
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*postion and space bettween elements in navbar*/
+#navbar li
+{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+/*style for elements*/
+#navbar li a
+{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a;
+	transition: 0.3s ease;
+}
+/*shift color after clicking on the element*/
+#navbar li a:hover,
+#navbar li a.active {
+	color: #088178;
+}
+/*shift color after clicking for all elements in navigation panel*/
+#navbar li a.active::after,
+#navbar li a:hover::after {
+	content: "";
+	width: 30%;
+	height: 2px;
+	background: #088178;
+	position: absolute;
+	bottom: -4px;
+	left: 20px;
+}
+
+/*-----Home page section-----*/
+#hero
+{
+	background-image: url("images/background_index.jpg");
+	height: 90vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: top 25% right 0;
+	background-size: cover;
+	padding: 0 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	color: black;
+}
+
+/*space of h4 */
+#hero h4
+{
+	padding-bottom: 15px;
+}
+
+/*new color for h2*/
+#hero h2
+{
+	color: #088178;
+}
+
+#hero button
+{
+	background-color: transparent;
+	color: black;
+	border: 0;
+}
+
+/*position for feature and image output*/
+#feature
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+/*space for p1*/
+.section-p1
+{
+	padding: 40px 80px;
+}
+
+
+/*style for fe-box*/
+#feature .fe-box
+{
+	width: 180px;
+	text-align: center;
+	padding: 25px 1px;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+	border: 1px solid #cce7d0;
+	border-radius: 4px;
+	margin: 15px 0;
+}
+
+/*shadow effect for fe-box*/
+#feature .fe-box:hover{
+	box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+
+/*style for h5 element in fe-box class*/
+#feature .fe-box h5
+{
+	padding: 9px 8px 6px 8px;
+	line-height: 1;
+	border-radius: 4px;
+	color: #088178;
+	background-color: #fddde4;
+	display: inline-block;
+}
+
+/*size and position of image*/
+#feature .fe-box img
+{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/*position for id product1*/
+#product1
+{
+	text-align: center;
+}
+
+/*view and position of class pro-container*/
+#product1 .pro-container
+{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	flex-wrap: wrap;
+}
+
+/*position and size for class pro*/
+#product1 .pro
+{
+	width: 23%;
+	min-width: 250px;
+	padding: 10px 12px;
+	border: 1px solid #cce7d0;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+	margin: 15px 0;
+	transition: 0.2s ease;
+	position: relative;
+}
+
+
+/*shadow effect for class pro*/
+#product1 .pro:hover{
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.09);
+}
+
+/*image size and border in id product1*/
+#product1 .pro img
+{
+	width: 100%;
+	border-radius: 20px;
+}
+
+/*description postion in class pro*/
+#product1 .pro .des{
+	text-align: start;
+	padding: 10px 0;
+}
+
+/*-----style for span, h5, h4-----*/
+#product1 .pro .des span
+{
+	color: black;
+	font-size: 12px;
+}
+
+
+#product1 .pro .des h5
+{
+	padding-top: 7px;
+	color: #1a1a1a;
+	font-size: 14px;
+}
+
+#product1 .pro .des h4
+{
+	padding-top: 7px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #088178;
+}
+
+
+/*style for a in class pro in id product*/
+#product .pro a
+{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	list-style: none;
+	border-radius: 50px;
+	background-color: transparent;
+	font-weight: 500;
+	color: #088178;
+}
+
+/*position for section-m1 class*/
+.section-m1
+{
+	margin: 40px 0;
+}
+
+
+/*-----Section for banner-----*/
+/*positon and style of banner id*/
+#banner
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url("images/middle_back.jpg");
+	width: 100%;
+	height: 40vh;
+	background-size: cover;
+	background-position: center;
+}
+
+/*style of banner elements: h4, h2, span of h2*/
+#banner h4
+{
+	color: #fff;
+	font-size: 16px;
+}
+
+#banner h2
+{
+	color: #fff;
+	font-size: 30px;
+	padding: 10px 0;
+}
+
+#banner h2 span
+{
+	color: red;
+}
+
+/*style for button with class normal*/
+button.normal{
+	font-size: 14px;
+	font-weight: 600;
+	padding: 15px 30px;
+	color: black;
+	background-color: white;
+	border-right: 4px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+}
+
+/*-----Newsletter-----*/
+/*position and style for newsletter*/
+#newsletter 
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	background-position: 20% 30%;
+	background-color: #041e42;
+}
+
+/*style of newsletter elements: h4, p, span of p*/
+#newsletter h4
+{
+	font-size: 22px;
+	font-weight: 700;
+	color: white;
+}
+
+#newsletter p
+{
+	font-size: 14px;
+	font-weight: 600;
+	color: white;
+}
+
+#newsletter p span
+{
+	color: yellow;
+}
+
+/*size and view of form-input*/
+#newsletter .form-input
+{
+	display: flex;
+	width: 40%;
+
+}
+
+/*input style, position*/
+#newsletter input
+{
+	height: 3.125rem;
+	padding: 0 1.25em;
+	font-size: 14px;
+	width: 100%;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	outline: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+/*style of button in newsletter id*/
+#newsletter button
+{
+	background-color: #088178;
+	color: #fff;
+	white-space: nowrap;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/*-----Footer-----*/
+/*footer style*/
+footer
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: black;
+}
+
+/*style for column, name, h4,p, and a in footer*/
+footer .column
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+footer .name
+{
+	margin-bottom: 30px;
+}
+
+footer h4, p
+{
+	font-size: 14px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+footer a
+{
+	font-size: 14px;
+	padding-bottom: 20px;
+	text-decoration: none;
+}
+
+
+
+
+
+/*possible code for pages on gadgets*/
+@media (max-width: 799px;){
+    #navbar {
+		position: fixed;
+		top: 0;
+		right: -300px;
+		height: 100vh;
+		width: 300px;
+		background-color: #E3E6F3;
+		box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+		padding: 80px 0 0 10px;
+	}
+
+	#navbar li
+	{
+		margin-bottom: 25px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,257 @@
+/*------All page style------*/
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif; 
+}
+
+/*------Size of body in width------*/
+
+body
+{
+	width: 100%;
+}
+/*-------Navbar style------*/
+
+/*style of background for navigation panel*/
+#header
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background: #E3E6F3;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+	z-index: 999;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+/*positon for elements inside of navigation panel*/
+#navbar
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*postion and space bettween elements in navbar*/
+#navbar li
+{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+/*style for elements*/
+#navbar li a
+{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a;
+	transition: 0.3s ease;
+}
+/*shift color after clicking on the element*/
+#navbar li a:hover,
+#navbar li a.active {
+	color: #088178;
+}
+/*shift color after clicking for all elements in navigation panel*/
+#navbar li a.active::after,
+#navbar li a:hover::after {
+	content: "";
+	width: 30%;
+	height: 2px;
+	background: #088178;
+	position: absolute;
+	bottom: -4px;
+	left: 20px;
+}
+
+/*style for page-header*/
+#page-header
+{
+	background-image: url("images/cart1.jpg");
+	width: 100%;
+	height: 45vh;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	padding: 14px;
+}
+
+
+/*new color for h2*/
+#page-header h2, p
+{
+	color: black;
+	text-align: left;
+	font-family: monospace;
+	font-weight: 800;
+}
+
+/*postion for section-p1*/
+.section-p1
+{
+	padding: 40px 80px;
+}
+
+/*section for cart*/
+#cart
+{
+	overflow-x: auto;
+}
+
+/*size of table and style*/
+#cart_p table
+{
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	white-space: nowrap;
+}
+
+/*size of image in table*/
+#cart_p table img
+{
+	width: 70px;
+}
+
+/*size and position of table td information*/
+#cart_p table td:nth-child(1){
+	width: 100px;
+	text-align: center;
+}
+
+#cart_p table td:nth-child(2){
+	width: 150px;
+	text-align: center;
+}
+
+#cart_p table td:nth-child(3){
+	width: 250px;
+	text-align: center;
+}
+
+#cart_p table td:nth-child(4),
+#cart_p table td:nth-child(5),
+#cart_p table td:nth-child(6){
+	width: 150px;
+	text-align: center;
+}
+
+/*size and position for table td info for input*/
+#cart_p table td:nth-child(5) input
+{
+	width: 70px;
+	padding: 10px 5px 10px 15px;
+}
+
+
+/*style of border of table thead*/
+#cart_p table thead
+{
+	border: 5px solid #e2e9e1;
+	border-left: none;
+	border-right: none;
+
+}
+
+
+/*style for row td text*/
+#cart_p table thead td
+{
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 13px;
+	padding: 18px 0;
+}
+
+#cart_p table tbody tr td
+{
+	padding-top: 15px;
+}
+
+
+/*style for button with class normal*/
+button.normal{
+	font-size: 14px;
+	font-weight: 600;
+	padding: 15px 30px;
+	color: black;
+	background-color: white;
+	border-right: 4px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+}
+
+/*position for cart-add id*/
+#cart-add
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+/*position for coupon id*/
+#coupon
+{
+	width: 50%;
+	margin-bottom: 30px;
+}
+
+/*position for elements h3 in coupon and subtotal id*/
+#coupon h3, #subtotal h3
+{
+	padding-bottom: 15px;
+}
+
+
+#coupon input
+{
+	padding: 10px 20px;
+	outline: none;
+	width: 60%;
+	margin-right: 10px;
+	border: 1px solid #e2e9e1;
+}
+/*style for buttons in coupon and subtotal id*/
+#coupon button, #subtotal button
+{
+	background-color: yellow;
+	padding: 12px 20px;
+}
+
+
+/*size and position for subtotal id*/
+#subtotal 
+{
+	width: 50%;
+	margin-bottom: 30px;
+	border: 6px solid #e2e9e1;
+	padding: 30px;
+}
+
+/*size and position for table in subtotal id*/
+#subtotal table
+{
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 20px;
+}
+/*size and position for td info in table in subtotal id*/
+#subtotal table td
+{
+	width: 50%;
+	border: 4px solid #e2e9e1;
+	padding: 10px;
+	font-size: 14px;
+}
+

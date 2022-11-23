@@ -1,0 +1,158 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif; 
+}
+
+/*------Size of body in width------*/
+
+body
+{
+	width: 100%;
+}
+/*-------Navbar style------*/
+
+/*style of background for navigation panel*/
+#header
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background: #E3E6F3;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+	z-index: 999;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+/*positon for elements inside of navigation panel*/
+#navbar
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*postion and space bettween elements in navbar*/
+#navbar li
+{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+/*style for elements*/
+#navbar li a
+{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a;
+	transition: 0.3s ease;
+}
+/*shift color after clicking on the element*/
+#navbar li a:hover,
+#navbar li a.active {
+	color: #088178;
+}
+/*shift color after clicking for all elements in navigation panel*/
+#navbar li a.active::after,
+#navbar li a:hover::after {
+	content: "";
+	width: 30%;
+	height: 2px;
+	background: #088178;
+	position: absolute;
+	bottom: -4px;
+	left: 20px;
+}
+
+/*padding of section-p1*/
+.section-p1
+{
+	padding: 40px 80px;
+}
+
+/*product_detail position*/
+#product_detail 
+{
+	display: flex;
+	margin-top: 20px;
+}
+
+/*size, position for product image*/
+#product_detail .single_product_image
+{
+	width: 40%;
+	margin-right: 50px;
+}
+
+/*position small images*/
+.small-images
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/*cursor for small images*/
+.small-image-column
+{
+	flex-basis: 24%;
+	cursor: pointer;
+}
+
+/*position for class single product details*/
+#product_detail .single-product-details
+{
+	width: 50%;
+	padding-top: 30px;
+}
+
+#product_detail .single-product-details h4
+{
+	padding: 40px 0 20px 0;
+}
+
+/*size of font for h2 in single product details class*/
+#product_detail .single-product-details h2
+{
+	font-size: 26px;
+}
+
+
+/*position for select navigation*/
+#product_detail .single-product-details select
+{
+	display: block;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+}
+
+/*size and position for input in singe product details class*/
+#product_detail .single-product-details input
+{
+	width: 50px;
+	height: 47px;
+	padding-left: 10px;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+
+/*style for button by using class .normal*/
+#product_detail .single-product-details button.normal{
+	font-size: 14px;
+	font-weight: 600;
+	padding: 15px 30px;
+	color: white;
+	background-color: #088178;
+	border-right: 4px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+}
+
