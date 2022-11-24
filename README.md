@@ -28,7 +28,10 @@ Github pages: https://00013810.github.io/WT_CW1/
 Netlify: https://brilliant-longma-09437f.netlify.app/index.html 
 
 
+
+
 Reference List
+
 CodingLab (2022). Responsive Registration Form in HTML CSS & JavaScript. CodingLab. YouTube. Available from: https://youtu.be/wL9YzgA13c4 [Accessed 16 November, 2022]
 
 customuae.Senior Jacket – Deira International School 23 [image].customuae. Available from: https://customuae.com/product/senior-jacket-deira-international-school-23/ [Accessed 19 November 2022]
